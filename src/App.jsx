@@ -1,6 +1,6 @@
 import Header  from './components/header.jsx';
 import CoreConcepts from './Components/CoreConcepts.jsx';
-import {CORE_CONCEPTS as coreonly}  from './data.js';
+import {CORE_CONCEPTS}  from './data.js';
 
 function App() {
   return (
@@ -11,12 +11,12 @@ function App() {
           <h2> Core Concepts</h2>
             <ul>
                <CoreConcepts
-                    title= {coreonly[0].title}
-                    description={coreonly[0].description}
-                    image={coreonly[0].image}/>
-              <CoreConcepts {...coreonly[1]}/>
-              <CoreConcepts {...coreonly[2]}/>
-              <CoreConcepts {...coreonly[3]}/>
+                    title= {CORE_CONCEPTS[0].title}
+                    description={CORE_CONCEPTS[0].description}
+                    image={CORE_CONCEPTS[0].image}/>
+              <CoreConcepts {...CORE_CONCEPTS[1]}/>
+              <CoreConcepts {...CORE_CONCEPTS[2]}/>
+              <CoreConcepts {...CORE_CONCEPTS[3]}/>
                        
             </ul>
         </section>
